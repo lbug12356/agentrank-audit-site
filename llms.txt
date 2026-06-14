@@ -1,0 +1,19 @@
+# AgentRank Audit
+
+AgentRank Audit is a self-serve AI search readiness scanner for SaaS teams, SEO consultants, and agencies.
+
+## Key Pages
+
+- Product: /
+- Pricing: /#pricing
+- Launch Kit: /#launch
+- OAI-SearchBot Checker: /tools/oai-searchbot-checker/
+- Claude-SearchBot Checker: /tools/claude-searchbot-checker/
+- PerplexityBot Checker: /tools/perplexitybot-checker/
+- Google-Extended Checker: /tools/google-extended-checker/
+- llms.txt Limitations: /guides/llms-txt-limitations/
+- Sample Report: /sample-agentrank-audit.md
+
+## Scope
+
+The tool checks robots.txt, sitemap.xml, llms.txt, JSON-LD, metadata, headings, and crawlable high-value links. It treats llms.txt as an optional content map, not as a guaranteed ranking signal.
