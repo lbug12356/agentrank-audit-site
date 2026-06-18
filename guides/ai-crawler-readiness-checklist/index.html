@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>AI Crawler Readiness Checklist for SEO Teams | AgentRank Audit</title>
+    <meta name="description" content="A practical AI crawler readiness checklist for SEO teams reviewing robots.txt, sitemap coverage, schema, crawlable commercial pages, and llms.txt claims." />
+    <link rel="canonical" href="/guides/ai-crawler-readiness-checklist/" />
+    <style>
+      body{font-family:Inter,system-ui,sans-serif;max-width:920px;margin:0 auto;padding:48px 20px;line-height:1.6;color:#17211f;background:#f6f7f3}
+      h1{font-size:40px;line-height:1.1;margin-bottom:12px} h2{margin-top:32px} a{color:#0f766e} code{background:#edf4f1;padding:2px 6px;border-radius:6px}
+      .cta{display:inline-block;background:#17211f;color:#fff;padding:12px 16px;border-radius:8px;text-decoration:none;margin-right:10px}.note{background:#fff;border:1px solid #dbe5df;border-radius:8px;padding:16px}
+    </style>
+  </head>
+  <body>
+    <h1>AI Crawler Readiness Checklist</h1>
+    <p>This checklist is for SEO teams, GEO agencies, and SaaS marketers who need a technical preflight before broader AI search work. It does not predict or guarantee AI citations.</p>
+    <div class="note">Use it to find crawler policy gaps, indexability issues, and missing machine-readable context before selling a larger GEO or AEO engagement.</div>
+    <h2>1. Robots.txt AI Crawler Policy</h2>
+    <ul>
+      <li>Review explicit rules for <code>OAI-SearchBot</code>, <code>GPTBot</code>, <code>ClaudeBot</code>, <code>Claude-SearchBot</code>, <code>PerplexityBot</code>, and <code>Google-Extended</code>.</li>
+      <li>Check whether important commercial pages are accidentally blocked by broad disallow rules.</li>
+      <li>Document whether the policy is intentional, absent, or conflicting.</li>
+    </ul>
+    <h2>2. Sitemap And Crawl Path</h2>
+    <ul>
+      <li>Confirm robots.txt references at least one sitemap.</li>
+      <li>Check whether pricing, product, docs, case study, and comparison pages appear in XML sitemaps.</li>
+      <li>Look for orphaned or JavaScript-only pages that need internal links.</li>
+    </ul>
+    <h2>3. Schema And Entity Clarity</h2>
+    <ul>
+      <li>Validate Organization, Product, SoftwareApplication, FAQ, Article, and Breadcrumb schema where relevant.</li>
+      <li>Make sure brand, product category, audience, and offer are clear in visible copy.</li>
+      <li>Do not add fake claims or unsupported review markup.</li>
+    </ul>
+    <h2>4. llms.txt Reality Check</h2>
+    <p><code>llms.txt</code> can be useful as a site map for humans and AI tooling, but it is not a ranking guarantee. Treat it as optional documentation, not a replacement for crawlable pages and schema.</p>
+    <p><a class="cta" href="/">Run the free audit</a><a class="cta" href="/sample-agentrank-audit.md">View sample report</a></p>
+  </body>
+</html>

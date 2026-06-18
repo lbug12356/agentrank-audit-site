@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Robots.txt AI Crawler Policy Audit | AgentRank Audit</title>
+    <meta name="description" content="Audit whether robots.txt clearly handles AI crawlers such as OAI-SearchBot, GPTBot, ClaudeBot, Claude-SearchBot, PerplexityBot, and Google-Extended." />
+    <link rel="canonical" href="/guides/robots-txt-ai-crawler-policy/" />
+    <style>
+      body{font-family:Inter,system-ui,sans-serif;max-width:900px;margin:0 auto;padding:48px 20px;line-height:1.6;color:#17211f;background:#f6f7f3}
+      h1{font-size:40px;line-height:1.1} a{color:#0f766e} code,pre{background:#edf4f1;border-radius:6px} code{padding:2px 6px} pre{padding:14px;overflow:auto}.cta{display:inline-block;background:#17211f;color:white;padding:12px 16px;border-radius:8px;text-decoration:none}
+    </style>
+  </head>
+  <body>
+    <h1>Robots.txt AI Crawler Policy Audit</h1>
+    <p>Many teams sell AI search visibility work before checking the simplest technical question: can the relevant crawler reach the pages that explain the offer?</p>
+    <h2>Common Policy States</h2>
+    <ul>
+      <li><strong>Explicit allow:</strong> The site intentionally permits a crawler.</li>
+      <li><strong>Explicit block:</strong> The site intentionally blocks a crawler.</li>
+      <li><strong>Implicit/default:</strong> The crawler is not named; behavior depends on broader robots.txt rules.</li>
+      <li><strong>Conflicting:</strong> A specific allow/block conflicts with a broad rule.</li>
+    </ul>
+    <h2>Example Review Block</h2>
+    <pre>User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: GPTBot
+Disallow: /</pre>
+    <p>This example allows OpenAI search discovery while blocking model training crawler access. A real audit should also inspect sitemap coverage, page crawlability, schema, and internal links.</p>
+    <h2>Agency Deliverable</h2>
+    <p>AgentRank Audit turns this check into a client-ready Markdown report with crawler policy, sitemap, schema, and priority fix notes. It does not promise rankings, traffic, revenue, or AI citations.</p>
+    <p><a class="cta" href="/">Run the free AgentRank Audit</a></p>
+  </body>
+</html>
